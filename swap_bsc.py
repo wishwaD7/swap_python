@@ -118,6 +118,8 @@ try:
 except Exception as e:
     print("Error calling getAmountsOut function:", e)
 
+
+
 # Adjust for slippage tolerance
 amount_out_min = int(amount_out_min * (1 - slippage_tolerance / 100))
 amount_out=web3.to_wei(amount_out_min, 'ether')
